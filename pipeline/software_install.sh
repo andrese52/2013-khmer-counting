@@ -59,11 +59,15 @@ make install
 # Install DSK
 cd /usr/local/src
 ldconfig
-wget http://minia.genouest.org/dsk/dsk-1.5031.tar.gz
-tar zxvf dsk-1.5031.tar.gz
-cd dsk-1.5031
-make omp=1
-cp dsk /usr/local/bin
+wget http://gatb-tools.gforge.inria.fr/versions/bin/dsk-2.1.0-Linux.tar.gz
+tar xvzf dsk-2.1.0-Linux.tar.gz
+cd dsk-2.1.0-Linux/
+# wget http://minia.genouest.org/dsk/dsk-1.5031.tar.gz
+# tar zxvf dsk-1.5031.tar.gz
+# cd dsk-1.5031
+# make omp=1
+# cp dsk /usr/local/bin
+cp bin/dsk /usr/local/bin
 
 # Install KMC
 cd /usr/local/src
